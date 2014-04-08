@@ -2,6 +2,10 @@
 #include <stdlib.h>
 
 int main(int argc, char **argv){
+		if(argc<3){
+			printf("Incorrect number of arguments\n");
+			return 0;
+		}
 		//Opening the file
 		FILE *fp;
 		fp = fopen(argv[1],"r");
